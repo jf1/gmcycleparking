@@ -1,0 +1,42 @@
+{include file='header.html'}
+
+
+
+<h1>Contact us</h1>
+
+
+<!-- {$text} -->
+
+<p>You can contact us via these methods.</p>
+
+<!-- /{$text} -->
+
+
+<p>E-mail: <!-- {$feedbackRecipient} -->email@example.com<!-- /{$feedbackRecipient} --></p>
+
+
+<!-- {$form} -->
+
+<form action="#" method="post">
+	<fieldset>
+		<label><span>* </span>Your Name </label>
+		<!-- {$name} --><input type="text" name="name"/><!-- /{$name} -->
+	</fieldset>
+	<fieldset>
+		<label><span>* </span>Your Email </label>
+		<!-- {$email} --><input type="text" name="email"/><!-- /{$email} -->
+	</fieldset>
+	<fieldset>
+		<label><span>* </span>Your Message </label>
+		<!-- {$message} --><textarea name="message"></textarea><!-- /{$message} -->
+	</fieldset>
+	<fieldset>
+		<!-- {$submit} --><input type="submit" value="Send message" /><!-- /{$submit} -->
+	</fieldset>
+</form>
+
+<!-- /{$form} -->
+
+
+
+{include file='footer.html'}
